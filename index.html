@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Приложение для планирования дел</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">	
+</head>
+<body>
+	<h1 class="visually-hidden">Приложение для планирования дел</h1>
+
+	<main class="container main-content clearfix">
+		<section class="todo">
+			<h2 class="section-title">Список дел:</h2>
+
+			<p class="empty-list js-emptyListElem">Список пуст...</p>
+
+			<ul class="todo-list js-listTodo">
+				   
+			</ul>
+		</section>
+
+		<section class="add-todo">
+			<h2 class="section-title">Добавить новое дело</h2>
+
+			<form id="create-new-todo" class="form-todo js-createNewTodo" name="add-todo" method="get">
+				<label class="label" for="name">&#42; Название:</label>
+				<input class="name-todo js-addNameTodo" id="name" type="text" size="40" name="name" required>
+
+				<label class="label" for="descr">&#42; Описание:</label>
+				<textarea class="descr-todo js-addDescrTodo" id="descr" cols="44" rows="11" name="descr" required></textarea>				
+			
+				<button class="add js-addNewItem" type="submit">Добавить дело</button>
+			</form>
+		</section>
+	</main>	
+	
+	<script src="js/main.js"></script>
+</body>
+</html>
